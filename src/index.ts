@@ -1,7 +1,11 @@
-import { LitElement, html } from 'lit-element';
+import { LitElement, html, property } from 'lit-element';
 
 export class MyElement extends LitElement {
+
+    @property({ type: String })
+    name = '';
+
     render() {
-        return html`<div>Hello, World</div>`;
+        return html`<div>Hello, ${this.name}</div>`;
     }
 }
