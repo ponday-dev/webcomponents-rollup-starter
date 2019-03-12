@@ -17,7 +17,7 @@ module.exports = {
         {
             file: `lib/${pkg.name}.umd.js`,
             format: 'umd',
-            package: pkg.name
+            name: pkg.name
         }
     ],
     external: [
